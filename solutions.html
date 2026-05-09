@@ -90,7 +90,6 @@
         </div>
     </div>
 
-    <!-- 2. Sticky Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 px-6 lg:px-20 py-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-10 xl:gap-16">
@@ -112,12 +111,43 @@
                         href="contact.html">Contact</a>
                 </div>
             </div>
-            <button onclick="window.location.href='contact.html'"
-                class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-widest hover:bg-primary/90 transition-all shadow-md active:scale-95">
-                Get a Quote
-            </button>
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="contact.html"
+                    class="bg-primary text-white px-4 md:px-6 py-2 md:py-2.5 rounded-lg text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-widest hover:bg-primary/90 transition-all shadow-md active:scale-95">
+                    Get a Quote
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-navy p-2 hover:bg-gray-100 rounded-lg transition-colors" aria-label="Toggle Menu">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="fixed inset-0 z-[60] lg:hidden hidden">
+        <div class="absolute inset-0 bg-navy/60 backdrop-blur-sm" onclick="toggleMenu()"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-[300px] bg-white shadow-2xl flex flex-col p-8 transform translate-x-full transition-transform duration-300" id="mobileMenuContent">
+            <div class="flex items-center justify-between mb-10">
+                <img src="assets/logo.png" alt="REMCO" class="h-10 w-auto" />
+                <button onclick="toggleMenu()" class="text-navy p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                    <span class="material-symbols-outlined text-3xl">close</span>
+                </button>
+            </div>
+            <div class="flex flex-col gap-6">
+                <a href="index.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">About</a>
+                <a href="solutions.html" class="text-primary text-lg font-bold uppercase tracking-widest">Solutions</a>
+                <a href="projects.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">Projects</a>
+                <a href="certifications.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">Certifications</a>
+                <a href="contact.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">Contact</a>
+            </div>
+            <div class="mt-auto pt-10 border-t border-gray-100">
+                <button onclick="window.location.href='contact.html'" class="w-full bg-primary text-white py-4 rounded-xl font-black uppercase tracking-widest shadow-lg">
+                    Get a Quote
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- 3. Hero Section -->
     <section class="relative min-h-[40vh] flex items-center overflow-hidden">
@@ -370,6 +400,26 @@
         window.addEventListener('load', () => {
             document.body.classList.add('loaded');
         });
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const content = document.getElementById('mobileMenuContent');
+            const isHidden = menu.classList.contains('hidden');
+
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                setTimeout(() => {
+                    content.classList.remove('translate-x-full');
+                }, 10);
+                document.body.style.overflow = 'hidden';
+            } else {
+                content.classList.add('translate-x-full');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                }, 300);
+                document.body.style.overflow = 'auto';
+            }
+        }
     </script>
 </body>
 </html>
