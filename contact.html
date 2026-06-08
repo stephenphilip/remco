@@ -76,11 +76,11 @@
         <div class="flex gap-6">
             <span class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-sm">call</span>
-                +255 2137773 / 2133297
+                +255 22 2137773 / 2133297
             </span>
             <span class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-sm">mail</span>
-                remco@cats-net.co.tz
+                <a href="mailto:remco@cats-net.co.tz" class="hover:text-white transition-colors">remco@cats-net.co.tz</a> / <a href="mailto:denny@remcoint.com" class="hover:text-white transition-colors">denny@remcoint.com</a>
             </span>
         </div>
         <div class="hidden md:flex gap-4 items-center">
@@ -200,16 +200,7 @@
                         </div>
                         <div>
                             <h5 class="font-bold text-navy uppercase text-sm mb-1">Phone Numbers</h5>
-                            <p class="text-gray-500 text-sm">+255 2137773 / 2133297</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="250">
-                        <div class="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg text-primary shrink-0">
-                            <span class="material-symbols-outlined">print</span>
-                        </div>
-                        <div>
-                            <h5 class="font-bold text-navy uppercase text-sm mb-1">Fax Number</h5>
-                            <p class="text-gray-500 text-sm">+255 22 2137774</p>
+                            <p class="text-gray-500 text-sm">+255 22 2137773 / 2133297</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
@@ -217,8 +208,11 @@
                             <span class="material-symbols-outlined">mail</span>
                         </div>
                         <div>
-                            <h5 class="font-bold text-navy uppercase text-sm mb-1">Email Address</h5>
-                            <p class="text-gray-500 text-sm">remco@cats-net.co.tz</p>
+                            <h5 class="font-bold text-navy uppercase text-sm mb-1">Email Addresses</h5>
+                            <p class="text-gray-500 text-sm">
+                                <a href="mailto:remco@cats-net.co.tz" class="hover:text-primary transition-colors block">remco@cats-net.co.tz</a>
+                                <a href="mailto:denny@remcoint.com" class="hover:text-primary transition-colors block">denny@remcoint.com</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -228,31 +222,40 @@
             <div class="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 relative overflow-hidden" data-aos="fade-left" data-aos-delay="200">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <h3 class="text-2xl font-black text-navy uppercase mb-8 relative z-10">Send us a Message</h3>
-                <form class="space-y-6 relative z-10">
+                <form id="contactForm" class="space-y-6 relative z-10">
+                    <!-- Web3Forms Config -->
+                    <input type="hidden" name="access_key" value="0305481a-e5ab-4973-a620-ae85bb7e40ab">
+                    <!-- Botcheck spam prevention -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-bold text-navy uppercase tracking-widest mb-2" for="first-name">First Name</label>
-                            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="first-name" type="text" placeholder="John" />
+                            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="first-name" name="first_name" type="text" placeholder="John" required />
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-navy uppercase tracking-widest mb-2" for="last-name">Last Name</label>
-                            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="last-name" type="text" placeholder="Doe" />
+                            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="last-name" name="last_name" type="text" placeholder="Doe" required />
                         </div>
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-navy uppercase tracking-widest mb-2" for="email">Email Address</label>
-                        <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="email" type="email" placeholder="john@company.com" />
+                        <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="email" name="email" type="email" placeholder="john@company.com" required />
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-navy uppercase tracking-widest mb-2" for="subject">Subject</label>
-                        <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="subject" type="text" placeholder="How can we help?" />
+                        <input class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white" id="subject" name="subject" type="text" placeholder="How can we help?" required />
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-navy uppercase tracking-widest mb-2" for="message">Message</label>
-                        <textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white resize-none" id="message" rows="5" placeholder="Write your message here..."></textarea>
+                        <textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all bg-gray-50 focus:bg-white resize-none" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
                     </div>
-                    <button class="w-full bg-primary text-white py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-primary/90 transition-all shadow-md" type="button">
-                        Submit Message
+
+                    <!-- Dynamic feedback display -->
+                    <div id="form-feedback" class="hidden p-4 rounded-lg text-sm font-semibold flex items-center gap-3 transition-all duration-300 transform translate-y-2 opacity-0"></div>
+
+                    <button id="submit-btn" class="w-full bg-primary text-white py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-primary/90 transition-all shadow-md flex justify-center items-center gap-2" type="submit">
+                        <span>Submit Message</span>
                     </button>
                 </form>
             </div>
@@ -272,7 +275,7 @@
                     <img src="assets/logo.png" alt="REMCO (International) Ltd" class="h-16 md:h-20 w-auto object-contain" />
                 </div>
                 <p class="text-gray-500 text-sm leading-relaxed mb-8">Authorized Carrier and Toshiba dealer in Tanzania
-                    with 27+ years of engineering excellence in premium HVAC systems.</p>
+                    with 28+ years of engineering excellence in premium HVAC systems.</p>
                 <div class="flex gap-4">
                     <a class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-navy hover:bg-primary hover:text-white transition-colors"
                         href="#">
@@ -311,6 +314,8 @@
                             Units</a></li>
                     <li><a class="text-gray-500 text-sm hover:text-primary transition-colors" href="#">Air Handling
                             Units</a></li>
+                    <li><a class="text-gray-500 text-sm hover:text-primary transition-colors" href="#">Close Control
+                            Units</a></li>
                     <li><a class="text-gray-500 text-sm hover:text-primary transition-colors" href="#">Building
                             Management</a></li>
                 </ul>
@@ -325,15 +330,14 @@
                     </li>
                     <li class="flex gap-4">
                         <span class="material-symbols-outlined text-primary">call</span>
-                        <span class="text-gray-500 text-sm">+255 2137773 / 2133297</span>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-primary">print</span>
-                        <span class="text-gray-500 text-sm">+255 22 2137774</span>
+                        <span class="text-gray-500 text-sm">+255 22 2137773 / 2133297</span>
                     </li>
                     <li class="flex gap-4">
                         <span class="material-symbols-outlined text-primary">mail</span>
-                        <span class="text-gray-500 text-sm">remco@cats-net.co.tz</span>
+                        <span class="text-gray-500 text-sm">
+                            <a href="mailto:remco@cats-net.co.tz" class="hover:text-primary transition-colors block">remco@cats-net.co.tz</a>
+                            <a href="mailto:denny@remcoint.com" class="hover:text-primary transition-colors block">denny@remcoint.com</a>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -385,6 +389,93 @@
                 document.body.style.overflow = 'auto';
             }
         }
+
+        // Web3Forms AJAX Form Handler
+        const form = document.getElementById('contactForm');
+        const feedback = document.getElementById('form-feedback');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitBtnText = submitBtn.querySelector('span');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Setup loading state
+            submitBtn.disabled = true;
+            submitBtnText.textContent = 'Sending Message...';
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // Reset and hide previous feedback status
+            feedback.classList.add('hidden');
+            feedback.classList.remove('translate-y-0', 'opacity-100');
+            feedback.classList.add('translate-y-2', 'opacity-0');
+            feedback.className = "p-4 rounded-lg text-sm font-semibold flex items-center gap-3 transition-all duration-300 transform translate-y-2 opacity-0 hidden";
+
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let res = await response.json();
+                if (response.status === 200) {
+                    // Success state
+                    feedback.innerHTML = `
+                        <span class="material-symbols-outlined text-emerald-600">check_circle</span>
+                        <span>Your message was sent successfully! We will get back to you soon.</span>
+                    `;
+                    feedback.classList.remove('hidden');
+                    // Trigger reflow for transition
+                    void feedback.offsetWidth;
+                    feedback.className = "p-4 rounded-lg text-sm font-semibold flex items-center gap-3 transition-all duration-300 transform translate-y-0 opacity-100 bg-emerald-50 text-emerald-800 border border-emerald-200";
+                    form.reset();
+                } else {
+                    // Error state from API
+                    feedback.innerHTML = `
+                        <span class="material-symbols-outlined text-rose-600">error</span>
+                        <span>${res.message || 'Something went wrong. Please try again.'}</span>
+                    `;
+                    feedback.classList.remove('hidden');
+                    // Trigger reflow for transition
+                    void feedback.offsetWidth;
+                    feedback.className = "p-4 rounded-lg text-sm font-semibold flex items-center gap-3 transition-all duration-300 transform translate-y-0 opacity-100 bg-rose-50 text-rose-800 border border-rose-200";
+                }
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                feedback.innerHTML = `
+                    <span class="material-symbols-outlined text-rose-600">error</span>
+                    <span>Failed to send message. Please check your internet connection.</span>
+                `;
+                feedback.classList.remove('hidden');
+                // Trigger reflow for transition
+                void feedback.offsetWidth;
+                feedback.className = "p-4 rounded-lg text-sm font-semibold flex items-center gap-3 transition-all duration-300 transform translate-y-0 opacity-100 bg-rose-50 text-rose-800 border border-rose-200";
+            })
+            .finally(() => {
+                // Restore button state
+                submitBtn.disabled = false;
+                submitBtnText.textContent = 'Submit Message';
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+
+                // Auto-hide success message after 8 seconds
+                if (feedback.classList.contains('bg-emerald-50')) {
+                    setTimeout(() => {
+                        feedback.classList.remove('translate-y-0', 'opacity-100');
+                        feedback.classList.add('translate-y-2', 'opacity-0');
+                        setTimeout(() => {
+                            feedback.classList.add('hidden');
+                        }, 300);
+                    }, 8000);
+                }
+            });
+        });
     </script>
 </body>
 </html>
