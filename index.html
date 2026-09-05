@@ -49,6 +49,51 @@
             opacity: 1;
         }
 
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+
+        .text-center, .text-center p, p.text-center {
+            text-align: center !important;
+            hyphens: manual !important;
+            -webkit-hyphens: manual !important;
+        }
+
+        .text-left, .text-left p, p.text-left, .sub-heading {
+            text-align: left !important;
+            hyphens: manual !important;
+            -webkit-hyphens: manual !important;
+        }
+
+        .text-right, .text-right p, p.text-right {
+            text-align: right !important;
+            hyphens: manual !important;
+            -webkit-hyphens: manual !important;
+        }
+
+        @media (min-width: 768px) {
+            .md\:text-left, .md\:text-left p {
+                text-align: left !important;
+            }
+            .md\:text-center, .md\:text-center p {
+                text-align: center !important;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:text-left, .lg\:text-left p {
+                text-align: left !important;
+            }
+            .lg\:text-center, .lg\:text-center p {
+                text-align: center !important;
+            }
+        }
+
         .hero-overlay {
             background: linear-gradient(rgba(31, 58, 74, 0.7), rgba(57, 116, 65, 0.6));
         }
@@ -320,14 +365,12 @@
     <!-- 6. Solutions Preview -->
     <section class="py-24 px-6 lg:px-20 bg-gray-50">
         <div class="max-w-7xl mx-auto">
-            <div class="inline-block bg-primary px-6 py-2 rounded mb-6">
-                <span class="text-white font-black text-sm uppercase tracking-[0.3em]">Our Services</span>
-            </div>
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
-                <h2 class="text-4xl font-black text-navy uppercase leading-tight">Advanced Systems for <br />Modern
-                    Infrastructure</h2>
-                <p class="text-gray-500 max-w-md">Comprehensive engineering services from design and installation to
-                    long-term maintenance of complex climate systems.</p>
+            <div class="mb-14 max-w-3xl">
+                <div class="inline-block bg-primary px-6 py-2 rounded mb-4">
+                    <span class="text-white font-black text-sm uppercase tracking-[0.3em]">Our Services</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-black text-navy uppercase leading-tight mb-4">Advanced Systems for Modern Infrastructure</h2>
+                <p class="text-gray-500 text-base md:text-lg leading-relaxed text-left">Comprehensive engineering services from design and installation to long-term maintenance of complex climate systems.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
@@ -457,8 +500,7 @@
                         <h5 class="text-white text-xl font-bold uppercase">East African Community Head Quarters</h5>
                         <div
                             class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Premium HVAC system installation and
-                                engineering for the East African Community Headquarters in Arusha, Tanzania.</p>
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Comprehensive HVAC systems for the East African Community Headquarters in Arusha, a landmark complex serving member states across the region.</p>
                         </div>
                     </div>
                 </div>
@@ -466,9 +508,9 @@
             <!-- Project 2 -->
             <div class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
                 onclick="openModal(2)" data-aos="fade-up" data-aos-delay="100">
-                <img alt="Uhuru Heights"
+                <img alt="PSSSF Commercial Complex"
                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    src="assets/project-2.jpg" />
+                    src="assets/project-2.jpeg" />
                 <div
                     class="absolute inset-0 bg-gradient-to-t from-navy/90 via-transparent to-transparent group-hover:from-navy/90 group-hover:via-navy/60 group-hover:to-navy/40 transition-colors duration-500">
                 </div>
@@ -476,12 +518,10 @@
                     <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                         <span
                             class="text-white font-bold text-xs uppercase tracking-widest mb-2 block">Commercial</span>
-                        <h5 class="text-white text-xl font-bold uppercase">Uhuru Heights, Dar-es-salaam</h5>
+                        <h5 class="text-white text-xl font-bold uppercase">PSSSF Commercial Complex</h5>
                         <div
                             class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                            <p class="text-white/80 text-sm pt-4 line-clamp-3">A 25-storey tower in the heart of
-                                Dar-es-Salaam. A fashionable Shopping Mall occupies the basement, ground and first floor
-                                – featuring the world's best brands.</p>
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Central HVAC system installation for the prestigious PSSSF Commercial Complex, one of Tanzania's premier modern office and retail landmarks.</p>
                         </div>
                     </div>
                 </div>
@@ -502,9 +542,7 @@
                         <h5 class="text-white text-xl font-bold uppercase">State House Multi-functional Hall</h5>
                         <div
                             class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                            <p class="text-white/80 text-sm pt-4 line-clamp-3">A new major multi-function venue at State
-                                House intended to cater for Banquets of up to 500 guests as well as international
-                                conferences.</p>
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Whisper-quiet HVAC system for the State House multi-function hall, designed to accommodate state banquets of up to 500 guests and international summits.</p>
                         </div>
                     </div>
                 </div>
@@ -525,8 +563,7 @@
                         <h5 class="text-white text-xl font-bold uppercase">Tanzania Ports Authority (TPA)</h5>
                         <div
                             class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                            <p class="text-white/80 text-sm pt-4 line-clamp-3">The Tanzania Ports Authority (TPA)
-                                presently owns Dar es salaam, Tanga, Mtwara Ports and all lake ports in Tanzania.</p>
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Robust HVAC systems for the Tanzania Ports Authority, the central body managing Tanzania's major ocean and lake maritime gateways.</p>
                         </div>
                     </div>
                 </div>
@@ -547,9 +584,49 @@
                         <h5 class="text-white text-xl font-bold uppercase">TCRA</h5>
                         <div
                             class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                            <p class="text-white/80 text-sm pt-4 line-clamp-3">The Tanzania Communications Regulatory
-                                Authority (TCRA) is a statutory regulatory body responsible for regulating the
-                                communications and broadcasting sectors.</p>
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Complete HVAC systems for the Tanzania Communications Regulatory Authority headquarters, the statutory body overseeing the nation's communications sector.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+                onclick="openModal(6)" data-aos="fade-up" data-aos-delay="200">
+                <img alt="ZRA Head Office Zanzibar"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    src="assets/project-6.jpeg" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-navy/90 via-transparent to-transparent group-hover:from-navy/90 group-hover:via-navy/60 group-hover:to-navy/40 transition-colors duration-500">
+                </div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8">
+                    <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <span
+                            class="text-white font-bold text-xs uppercase tracking-widest mb-2 block">Government</span>
+                        <h5 class="text-white text-xl font-bold uppercase">ZRA Head Office Zanzibar</h5>
+                        <div
+                            class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Complete HVAC systems for the Zanzibar Revenue Authority Head Office, the primary administrative tax headquarters in Zanzibar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+                onclick="openModal(7)" data-aos="fade-up" data-aos-delay="0">
+                <img alt="NMB DATA CENTRE"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    src="assets/project-7.jpeg" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-navy/90 via-transparent to-transparent group-hover:from-navy/90 group-hover:via-navy/60 group-hover:to-navy/40 transition-colors duration-500">
+                </div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8">
+                    <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <span
+                            class="text-white font-bold text-xs uppercase tracking-widest mb-2 block">Financial / Data Centre</span>
+                        <h5 class="text-white text-xl font-bold uppercase">NMB DATA CENTRE</h5>
+                        <div
+                            class="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
+                            <p class="text-white/80 text-sm pt-4 line-clamp-3">Dedicated cooling and climate control for NMB Bank's primary Data Centre, safeguarding continuous banking and financial operations in Tanzania.</p>
                         </div>
                     </div>
                 </div>
@@ -732,26 +809,26 @@
             category: "Government",
             image: "assets/project-1.jpeg",
             description: `
-                    <p class="mb-4">The East African Community (EAC) Headquarters in Arusha, Tanzania, is a landmark government facility requiring state-of-the-art climate control.</p>
-                    <p class="mb-4">Our team successfully implemented a premium HVAC system tailored to the specific architectural and functional demands of this critical administrative hub.</p>
+                    <p class="mb-4">The East African Community (EAC) Headquarters in Arusha is a landmark international government complex that serves as the administrative hub for East African member nations.</p>
+                    <p class="mb-4">REMCO provided comprehensive HVAC systems throughout the facility, ensuring dependable climate control across executive offices, ministerial conference halls, and public assembly areas.</p>
                     <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
-                        <li>Comprehensive structural cooling and heating systems.</li>
-                        <li>Energy-efficient engineering to minimize operational costs.</li>
-                        <li>Strict adherence to international building codes and standards.</li>
+                        <li>Central air conditioning across all administrative wings and executive suites.</li>
+                        <li>Tailored climate control for international conference chambers and summit halls.</li>
+                        <li>Reliable year-round cooling designed for high-occupancy regional events.</li>
                     </ul>
                 `
         },
         2: {
-            title: "Uhuru Heights, Dar-es-salaam",
+            title: "PSSSF Commercial Complex",
             category: "Commercial",
-            image: "assets/project-2.jpg",
+            image: "assets/project-2.jpeg",
             description: `
-                    <p class="mb-4">Uhuru Heights is a prestigious 25-storey mixed-use tower situated in the heart of Dar-es-Salaam. It houses a fashionable Shopping Mall across the basement, ground, and first floors, featuring some of the world's best retail brands.</p>
-                    <p class="mb-4">REMCO engineered a robust and scalable climate control solution capable of managing the diverse thermal loads of retail, office, and residential zones within a single superstructure.</p>
+                    <p class="mb-4">The PSSSF Commercial Complex is a prestigious multi-storey landmark in Tanzania developed to provide world-class corporate offices, banking halls, and retail spaces.</p>
+                    <p class="mb-4">REMCO engineered and installed complete central HVAC systems across the complex to deliver quiet, consistent cooling for tenants, corporate visitors, and commercial shoppers.</p>
                     <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
-                        <li>Multi-zone variable refrigerant flow (VRF) systems.</li>
-                        <li>Dedicated central cooling for the shopping mall precinct.</li>
-                        <li>Acoustically treated ductwork to ensure quiet operation in residential areas.</li>
+                        <li>High-capacity central air conditioning serving multiple storeys of office space.</li>
+                        <li>Dedicated climate control for banking halls, commercial outlets, and shared amenities.</li>
+                        <li>Energy-efficient cooling designed for continuous daily commercial operations.</li>
                     </ul>
                 `
         },
@@ -760,12 +837,12 @@
             category: "Presidential",
             image: "assets/project-3.jpg",
             description: `
-                    <p class="mb-4">This new major multi-function venue at the State House is designed to host prestigious banquets of up to 500 guests, as well as high-level international conferences.</p>
-                    <p class="mb-4">We provided an ultra-silent, high-capacity HVAC system that maintains perfect ambient conditions without disrupting the acoustic integrity of presidential addresses and diplomatic meetings.</p>
+                    <p class="mb-4">The major multi-function hall at State House is a prestigious presidential venue built to host state banquets of up to 500 guests, official ceremonies, and high-level international summits.</p>
+                    <p class="mb-4">REMCO installed an advanced, whisper-quiet HVAC system engineered to maintain comfortable indoor temperatures during major state gatherings without disrupting acoustics or formal addresses.</p>
                     <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
-                        <li>Whisper-quiet air distribution systems.</li>
-                        <li>Advanced air filtration and purification.</li>
-                        <li>Redundant backup systems for mission-critical reliability.</li>
+                        <li>Quiet air circulation engineered specifically for diplomatic meetings and speeches.</li>
+                        <li>High-capacity cooling designed to handle large gatherings of up to 500 attendees.</li>
+                        <li>Balanced air distribution ensuring comfortable temperatures throughout the banquet hall.</li>
                     </ul>
                 `
         },
@@ -774,12 +851,12 @@
             category: "Infrastructure",
             image: "assets/project-4.jpg",
             description: `
-                    <p class="mb-4">The Tanzania Ports Authority (TPA) manages the vital Dar es salaam, Tanga, and Mtwara Ports, serving as a critical economic gateway.</p>
-                    <p class="mb-4">We deployed heavy-duty, corrosion-resistant HVAC units designed specifically to withstand the harsh, saline coastal environment while ensuring the comfort of administrative staff and the protection of sensitive port control electronics.</p>
+                    <p class="mb-4">The Tanzania Ports Authority (TPA) oversees the country's vital maritime gateways including the principal ocean ports of Dar es Salaam, Tanga, and Mtwara.</p>
+                    <p class="mb-4">REMCO supplied and installed robust HVAC systems designed to provide dependable cooling for administrative offices, operations management facilities, and maritime terminals.</p>
                     <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
-                        <li>Marine-grade anti-corrosion coatings on all outdoor units.</li>
-                        <li>High-efficiency chillers for large-scale administrative blocks.</li>
-                        <li>24/7 climate monitoring and automated controls.</li>
+                        <li>Durable HVAC systems built to withstand demanding coastal marine environments.</li>
+                        <li>Comprehensive cooling for multi-floor administrative and port operations offices.</li>
+                        <li>Continuous climate control supporting 24-hour maritime operations.</li>
                     </ul>
                 `
         },
@@ -788,12 +865,40 @@
             category: "Government",
             image: "assets/project-5.jpg",
             description: `
-                    <p class="mb-4">The Tanzania Communications Regulatory Authority (TCRA) is the statutory body responsible for regulating the nation's communications and broadcasting sectors.</p>
-                    <p class="mb-4">REMCO was tasked with providing precision cooling solutions for their critical data centers and server rooms, alongside comfort cooling for their extensive office spaces.</p>
+                    <p class="mb-4">The Tanzania Communications Regulatory Authority (TCRA) headquarters houses the executive leadership and administrative teams responsible for regulating the nation's broadcasting and communications sectors.</p>
+                    <p class="mb-4">REMCO installed complete HVAC systems throughout the complex, delivering dependable temperature control for corporate offices, regulatory conference rooms, and critical technology facilities.</p>
                     <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
-                        <li>Precision Air Conditioning (PAC) for server rooms.</li>
-                        <li>Intelligent building management system (BMS) integration.</li>
-                        <li>Sustainable and eco-friendly refrigerant solutions.</li>
+                        <li>Comprehensive air conditioning across administrative office floors.</li>
+                        <li>Dedicated cooling for communication facilities and technical rooms.</li>
+                        <li>Reliable climate management ensuring a comfortable working environment for regulatory staff.</li>
+                    </ul>
+                `
+        },
+        6: {
+            title: "ZRA Head Office Zanzibar",
+            category: "Government",
+            image: "assets/project-6.jpeg",
+            description: `
+                    <p class="mb-4">The Zanzibar Revenue Authority (ZRA) Head Office is the central administrative headquarters for revenue services and tax administration across the Revolutionary Government of Zanzibar.</p>
+                    <p class="mb-4">REMCO delivered and installed complete HVAC systems throughout the facility, ensuring dependable and continuous indoor cooling for public tax service halls and executive offices.</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
+                        <li>Complete central HVAC systems designed for the headquarters complex.</li>
+                        <li>Climate control across public service halls, taxpayer centers, and executive offices.</li>
+                        <li>Fresh air circulation keeping administrative spaces comfortable for staff and visitors.</li>
+                    </ul>
+                `
+        },
+        7: {
+            title: "NMB DATA CENTRE",
+            category: "Financial / Data Centre",
+            image: "assets/project-7.jpeg",
+            description: `
+                    <p class="mb-4">The NMB Bank Data Centre is a state-of-the-art facility supporting nationwide digital banking, ATMs, and branch transaction processing for one of Tanzania's largest banks.</p>
+                    <p class="mb-4">REMCO supplied and installed dedicated HVAC systems designed to provide continuous, uninterrupted climate control to protect critical banking computer infrastructure and server equipment.</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-600">
+                        <li>Dedicated cooling systems designed for 24/7 uninterrupted operation.</li>
+                        <li>Consistent temperature control across primary equipment and server rooms.</li>
+                        <li>Specialized air distribution engineered to safeguard vital banking infrastructure.</li>
                     </ul>
                 `
         }
