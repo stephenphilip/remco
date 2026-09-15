@@ -1,0 +1,11 @@
+# robots.txt for REMCO (International) Ltd
+# Website: https://remcointernational.com
+
+User-agent: *
+Allow: /
+
+# Disallow internal templates and draft files
+Disallow: /master_template.html
+
+# XML Sitemap Location
+Sitemap: https://remcointernational.com/sitemap.xml
