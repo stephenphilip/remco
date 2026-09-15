@@ -6,6 +6,8 @@ Allow: /
 
 # Disallow internal templates and draft files
 Disallow: /master_template.html
+Disallow: /maintenance.html
+Disallow: /home.html
 
 # XML Sitemap Location
 Sitemap: https://remcointernational.com/sitemap.xml
