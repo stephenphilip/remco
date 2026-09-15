@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scheduled Maintenance | REMCO (International) Ltd</title>
-    <meta name="description" content="REMCO (International) Ltd is currently performing scheduled system updates. For immediate commercial HVAC service or inquiries in Tanzania, contact us directly." />
+    <title>Coming Soon | REMCO (International) Ltd</title>
+    <meta name="description" content="REMCO (International) Ltd - Premier Air Conditioning & HVAC Solutions in Tanzania. Our new website is coming soon." />
     <meta name="robots" content="noindex, follow" />
 
     <!-- Performance & Preconnects -->
@@ -15,7 +15,6 @@
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
 
     <script id="tailwind-config">
         tailwind.config = {
@@ -25,11 +24,9 @@
                     colors: {
                         "primary": "#397441",
                         "navy": "#1F3A4A",
-                        "navy-dark": "#132530",
                         "carrier-blue": "#004595",
                         "toshiba-red": "#E4002B",
-                        "background-light": "#f7f7f7",
-                        "background-dark": "#171b18",
+                        "background-light": "#f8fafc",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"]
@@ -43,163 +40,67 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* Subtle ambient glow animations */
-        @keyframes floatSlow {
-            0%, 100% { transform: translateY(0px) scale(1); }
-            50% { transform: translateY(-15px) scale(1.03); }
+        /* Subtle ambient glow */
+        @keyframes pulseSoft {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.05); }
         }
 
-        .animate-float {
-            animation: floatSlow 8s ease-in-out infinite;
+        .ambient-glow {
+            animation: pulseSoft 6s ease-in-out infinite;
         }
 
-        /* Engineering grid background pattern */
-        .bg-grid-pattern {
-            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-            background-size: 32px 32px;
+        /* Delicate background grid */
+        .bg-light-grid {
+            background-image: radial-gradient(rgba(31, 58, 74, 0.06) 1px, transparent 1px);
+            background-size: 28px 28px;
         }
     </style>
 </head>
 
-<body class="bg-navy-dark text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden selection:bg-primary selection:text-white">
+<body class="bg-background-light text-navy min-h-screen flex flex-col justify-between items-center relative overflow-hidden selection:bg-primary selection:text-white px-6 py-10 sm:py-12">
 
-    <!-- Ambient Glowing Backdrops -->
-    <div class="fixed inset-0 bg-grid-pattern opacity-60 pointer-events-none z-0"></div>
-    <div class="fixed -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none animate-float"></div>
-    <div class="fixed -bottom-40 -right-40 w-96 h-96 bg-carrier-blue/20 rounded-full blur-[120px] pointer-events-none animate-float" style="animation-delay: -4s;"></div>
+    <!-- Background Decoration -->
+    <div class="fixed inset-0 bg-light-grid pointer-events-none z-0"></div>
+    <div class="fixed top-1/4 -left-32 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none ambient-glow"></div>
+    <div class="fixed bottom-1/4 -right-32 w-80 h-80 bg-navy/10 rounded-full blur-3xl pointer-events-none ambient-glow" style="animation-delay: -3s;"></div>
 
-    <!-- Top Status Bar -->
-    <header class="relative z-10 w-full py-6 px-6 lg:px-20 border-b border-white/10 backdrop-blur-md bg-navy-dark/40">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-                <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
-                </span>
-                <span class="text-xs font-semibold uppercase tracking-widest text-amber-300/90">
-                    System Maintenance &amp; Platform Upgrade
-                </span>
-            </div>
-            <div class="flex items-center gap-3 text-xs text-white/60">
-                <span>Authorized Dealer:</span>
-                <span class="px-2.5 py-0.5 rounded bg-carrier-blue/20 text-blue-300 font-bold border border-carrier-blue/30">Carrier</span>
-                <span class="px-2.5 py-0.5 rounded bg-toshiba-red/20 text-rose-300 font-bold border border-toshiba-red/30">Toshiba</span>
-            </div>
-        </div>
-    </header>
+    <!-- Top Spacer / Tag -->
+    <div class="relative z-10 w-full flex justify-center">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.25em] bg-white text-navy/70 border border-gray-200/80 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            REMCO (International) Ltd
+        </span>
+    </div>
 
-    <!-- Main Content Container -->
-    <main class="relative z-10 flex-grow flex items-center justify-center py-16 px-6 lg:px-20">
-        <div class="max-w-4xl mx-auto w-full text-center">
+    <!-- Centered Main Content: Logo & Coming Soon -->
+    <main class="relative z-10 flex-grow flex items-center justify-center py-12 w-full">
+        <div class="max-w-xl mx-auto w-full text-center flex flex-col items-center">
 
-            <!-- Company Logo with Glow Container -->
-            <div class="inline-flex items-center justify-center p-6 sm:p-8 bg-white/95 rounded-3xl shadow-2xl shadow-black/50 backdrop-blur-xl border border-white/20 mb-10 transition-transform hover:scale-105 duration-500">
-                <img src="assets/logo.png" alt="REMCO (International) Ltd - Premier Air Conditioning Solutions" width="220" height="70" class="h-14 sm:h-18 w-auto object-contain" />
+            <!-- Company Logo -->
+            <div class="mb-10 sm:mb-12 p-8 sm:p-10 bg-white rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100 flex items-center justify-center transition-transform duration-300 hover:scale-[1.02]">
+                <img src="assets/logo.png" alt="REMCO (International) Ltd" width="260" height="80" class="h-16 sm:h-20 w-auto object-contain" />
             </div>
 
-            <!-- Main Headline -->
-            <div class="space-y-4 mb-10">
-                <span class="inline-block bg-primary/20 text-primary-300 border border-primary/40 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.25em]">
-                    Notice to Our Valued Clients
-                </span>
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white leading-tight">
-                    We’re Upgrading Our <br class="hidden sm:inline" />
-                    <span class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Digital Platform</span>
-                </h1>
-                <p class="text-base sm:text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed">
-                    REMCO (International) Ltd is currently performing scheduled technical updates to enhance our online services. 
-                    Our engineering, client support, and emergency HVAC field teams remain <strong class="text-white font-semibold">100% operational</strong> throughout Tanzania.
-                </p>
-            </div>
+            <!-- Coming Soon Title -->
+            <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight text-navy mb-4 leading-tight">
+                Coming Soon
+            </h1>
 
-            <!-- Operational Status Notification Box -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 sm:p-8 mb-12 shadow-xl text-left">
-                <div class="flex items-center gap-3 mb-6 pb-4 border-b border-white/10">
-                    <span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
-                    <div>
-                        <h2 class="text-sm font-bold uppercase tracking-wider text-white">Emergency Services &amp; Inquiries Active</h2>
-                        <p class="text-xs text-white/60">Reach out directly for immediate assistance, ongoing project consultations, or equipment quotes.</p>
-                    </div>
-                </div>
+            <!-- Elegant Divider -->
+            <div class="w-16 h-1 bg-primary rounded-full mb-6"></div>
 
-                <!-- 3 Quick Contact Columns -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Phone Support -->
-                    <div class="bg-navy/50 p-5 rounded-xl border border-white/10 hover:border-primary/50 transition-all flex flex-col justify-between">
-                        <div>
-                            <div class="w-10 h-10 rounded-lg bg-primary/20 text-emerald-400 flex items-center justify-center mb-3">
-                                <span class="material-symbols-outlined text-xl">call</span>
-                            </div>
-                            <h3 class="text-xs font-bold uppercase tracking-wider text-white/90 mb-1">Direct Phone Lines</h3>
-                            <p class="text-sm text-white/80 font-medium">+255 22 2137773</p>
-                            <p class="text-sm text-white/80 font-medium">+255 22 2133297</p>
-                        </div>
-                        <a href="tel:+255222137773" class="mt-4 inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-primary text-white text-xs font-bold uppercase tracking-wider hover:bg-primary/90 transition-all">
-                            Call Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </a>
-                    </div>
-
-                    <!-- Email Support -->
-                    <div class="bg-navy/50 p-5 rounded-xl border border-white/10 hover:border-primary/50 transition-all flex flex-col justify-between">
-                        <div>
-                            <div class="w-10 h-10 rounded-lg bg-carrier-blue/20 text-blue-400 flex items-center justify-center mb-3">
-                                <span class="material-symbols-outlined text-xl">mail</span>
-                            </div>
-                            <h3 class="text-xs font-bold uppercase tracking-wider text-white/90 mb-1">Email Inquiries</h3>
-                            <a href="mailto:remco@cats-net.co.tz" class="text-xs text-white/80 hover:text-white transition-colors block truncate">remco@cats-net.co.tz</a>
-                            <a href="mailto:denny@remcoint.com" class="text-xs text-white/80 hover:text-white transition-colors block truncate">denny@remcoint.com</a>
-                        </div>
-                        <a href="mailto:remco@cats-net.co.tz" class="mt-4 inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-carrier-blue text-white text-xs font-bold uppercase tracking-wider hover:bg-carrier-blue/90 transition-all">
-                            Send Email <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </a>
-                    </div>
-
-                    <!-- Location -->
-                    <div class="bg-navy/50 p-5 rounded-xl border border-white/10 hover:border-primary/50 transition-all flex flex-col justify-between">
-                        <div>
-                            <div class="w-10 h-10 rounded-lg bg-white/10 text-white flex items-center justify-center mb-3">
-                                <span class="material-symbols-outlined text-xl">location_on</span>
-                            </div>
-                            <h3 class="text-xs font-bold uppercase tracking-wider text-white/90 mb-1">Head Office</h3>
-                            <p class="text-xs text-white/70 leading-relaxed">
-                                PO BOX 76058, Samora Avenue,<br />
-                                Dar es Salaam, Tanzania
-                            </p>
-                        </div>
-                        <div class="mt-4 pt-2 border-t border-white/10 text-[11px] text-white/50 text-center">
-                            Mon – Fri: 8:00 AM – 5:00 PM
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Progress Tracker -->
-            <div class="max-w-md mx-auto space-y-3">
-                <div class="flex justify-between text-xs text-white/60 font-semibold uppercase tracking-wider">
-                    <span>Upgrade Status</span>
-                    <span class="text-emerald-400">Final Verification</span>
-                </div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                    <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full w-[85%] animate-pulse"></div>
-                </div>
-                <p class="text-xs text-white/50">Expected restoration: Shortly</p>
-            </div>
+            <!-- Subtitle Message -->
+            <p class="text-base sm:text-lg text-gray-500 max-w-md mx-auto font-normal leading-relaxed">
+                We are crafting a new digital experience. Check back soon.
+            </p>
 
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="relative z-10 w-full py-6 px-6 lg:px-20 border-t border-white/10 backdrop-blur-md bg-navy-dark/40">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
-            <p>© 2024 REMCO (International) Ltd. 28+ Years of HVAC Engineering Excellence.</p>
-            <div class="flex items-center gap-6">
-                <a href="https://remcointernational.com" class="hover:text-white transition-colors">remcointernational.com</a>
-                <a href="https://www.linkedin.com/company/remco-international-tz" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1" aria-label="REMCO on LinkedIn">
-                    <span>LinkedIn</span>
-                    <span class="material-symbols-outlined text-xs">open_in_new</span>
-                </a>
-            </div>
-        </div>
+    <!-- Clean Footer -->
+    <footer class="relative z-10 w-full text-center text-xs text-gray-400 font-medium">
+        <p>© 2024 REMCO (International) Ltd. Official Carrier &amp; Toshiba Dealer in Tanzania.</p>
     </footer>
 
 </body>
