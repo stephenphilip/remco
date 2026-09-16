@@ -4,10 +4,9 @@
 User-agent: *
 Allow: /
 
-# Disallow internal templates and draft files
+# Disallow internal templates and standby pages
 Disallow: /master_template.html
 Disallow: /maintenance.html
-Disallow: /home.html
 
 # XML Sitemap Location
 Sitemap: https://remcointernational.com/sitemap.xml
