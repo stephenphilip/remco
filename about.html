@@ -38,116 +38,24 @@
     <meta name="twitter:description" content="Learn about REMCO International Ltd, Tanzania's leading HVAC engineering firm since 1997. Official Carrier and Toshiba partner for mission-critical cooling." />
     <meta name="twitter:image" content="https://remcointernational.com/assets/hero-image.png" />
 
-    <!-- Resource Hints & Core Web Vitals Preconnects -->
+    <!-- Core Web Vitals Preload & Performance Hints -->
+    <link rel="preload" as="image" href="assets/hero-image.webp" type="image/webp" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
     <link rel="dns-prefetch" href="https://unpkg.com" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Production Compiled Stylesheet (Zero render-blocking JS) -->
+    <link rel="stylesheet" href="assets/style.min.css" />
+
+    <!-- Non-render-blocking Web Fonts & Animations -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'" />
     <noscript>
-        <style>body { opacity: 1 !important; }</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     </noscript>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#397441",
-                        "navy": "#1F3A4A",
-                        "carrier-blue": "#004595",
-                        "toshiba-red": "#E4002B",
-                        "background-light": "#f7f7f7",
-                        "background-dark": "#171b18",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        p {
-            text-align: justify;
-            text-justify: inter-word;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-        }
-
-        .text-center, .text-center p, p.text-center {
-            text-align: center !important;
-            hyphens: manual !important;
-            -webkit-hyphens: manual !important;
-        }
-
-        .text-left, .text-left p, p.text-left, .sub-heading {
-            text-align: left !important;
-            hyphens: manual !important;
-            -webkit-hyphens: manual !important;
-        }
-
-        .text-right, .text-right p, p.text-right {
-            text-align: right !important;
-            hyphens: manual !important;
-            -webkit-hyphens: manual !important;
-        }
-
-        @media (min-width: 768px) {
-            .md\:text-left, .md\:text-left p {
-                text-align: left !important;
-            }
-            .md\:text-center, .md\:text-center p {
-                text-align: center !important;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .lg\:text-left, .lg\:text-left p {
-                text-align: left !important;
-            }
-            .lg\:text-center, .lg\:text-center p {
-                text-align: center !important;
-            }
-        }
-
-        .hero-overlay {
-            background: linear-gradient(rgba(31, 58, 74, 0.7), rgba(57, 116, 65, 0.6));
-        }
-
-        .animate-stagger-1 { animation-delay: 0.1s; }
-        .animate-stagger-2 { animation-delay: 0.2s; }
-        .animate-stagger-3 { animation-delay: 0.3s; }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .reveal-up {
-            opacity: 0;
-            animation: fadeInUp 0.8s forwards ease-out;
-        }
-    </style>
 
     <!-- Schema.org JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -221,7 +129,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-10 xl:gap-16">
                 <a href="index.html">
-                    <img src="assets/logo.png" alt="REMCO (International) Ltd - Official Carrier &amp; Toshiba Partner"
+                    <img src="assets/logo.webp" alt="REMCO (International) Ltd - Official Carrier &amp; Toshiba Partner"
                         width="180" height="56" class="h-12 md:h-14 w-auto object-contain" />
                 </a>
                 <div class="hidden lg:flex items-center gap-8">
@@ -256,7 +164,7 @@
         <div class="absolute inset-0 bg-navy/60 backdrop-blur-sm" onclick="toggleMenu()"></div>
         <div class="absolute right-0 top-0 bottom-0 w-[300px] bg-white shadow-2xl flex flex-col p-8 transform translate-x-full transition-transform duration-300" id="mobileMenuContent">
             <div class="flex items-center justify-between mb-10">
-                <img src="assets/logo.png" alt="REMCO" class="h-10 w-auto" />
+                <img src="assets/logo.webp" alt="REMCO" class="h-10 w-auto" />
                 <button onclick="toggleMenu()" class="text-navy p-2 hover:bg-gray-100 rounded-lg transition-colors">
                     <span class="material-symbols-outlined text-3xl">close</span>
                 </button>
@@ -277,13 +185,14 @@
         </div>
     </div>
 
+    <main id="main-content">
     <!-- 3. Hero Section (Smaller for internal pages) -->
     <section class="relative min-h-[40vh] flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 hero-overlay z-10"></div>
             <img alt="Modern commercial architecture cooled by REMCO HVAC engineering in Tanzania" class="w-full h-full object-cover object-center"
                 width="1920" height="600" fetchpriority="high" loading="eager"
-                src="assets/hero-image.png" />
+                src="assets/hero-image.webp" />
         </div>
         <div class="relative z-20 w-full px-6 lg:px-20 py-10 lg:py-12 text-white text-center">
             <div class="max-w-7xl mx-auto w-full">
@@ -323,7 +232,7 @@
                     width="600" height="450" loading="lazy" decoding="async"
                     class="rounded-xl shadow-2xl object-cover w-full aspect-[4/3]"
                     data-aos="fade-left"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk9k3RkBLZnZAFbm5qYs37ruMV2W8DC0aJZ1F1KPXRMgUTKHydwhUb9T0GsmOmmqgMCvrOfBpjo1Shfu31b3jGt0vVKkcBeu0jneteHPkzPO5FDnyRLlDfeWl9xoDriToZA2gVLGgyQ12RPc7yEasuw03VfFi5hiE2ihUDAN6WUKnC4AT4Bt0I5136XC6wWxliyvh_GwcEv7D18L04KT9wRVzXjWzF-Cvs8_RL-h1RHn5zO8KQ4lOehL5--t72r1Pt30x-tWQl1rE" />
+                    src="assets/about-industrial.webp" />
                 <div class="absolute -bottom-6 -left-6 bg-navy p-8 rounded-xl text-white shadow-xl hidden md:block" data-aos="zoom-in" data-aos-delay="300">
                     <span class="text-4xl font-black text-primary block">1997</span>
                     <span class="text-xs uppercase tracking-widest font-bold opacity-60">Year Established</span>
@@ -403,12 +312,14 @@
         </div>
     </section>
 
+    </main>
+
     <!-- 8. Footer -->
     <footer class="bg-white pt-24 pb-12 px-6 lg:px-20 border-t border-gray-100">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div>
                 <div class="flex items-center mb-8">
-                    <img src="assets/logo.png" alt="REMCO (International) Ltd - Official Carrier &amp; Toshiba Partner"
+                    <img src="assets/logo.webp" alt="REMCO (International) Ltd - Official Carrier &amp; Toshiba Partner"
                         width="180" height="56" class="h-16 md:h-20 w-auto object-contain" />
                 </div>
                 <p class="text-gray-500 text-sm leading-relaxed mb-8">Authorized Carrier and Toshiba dealer in Tanzania
@@ -472,8 +383,8 @@
                     <li class="flex gap-4">
                         <span class="material-symbols-outlined text-primary">mail</span>
                         <span class="text-gray-500 text-sm">
-                            <a href="mailto:remco@cats-net.co.tz" class="hover:text-primary transition-colors block">remco@cats-net.co.tz</a>
-                            <a href="mailto:denny@remcoint.com" class="hover:text-primary transition-colors block">denny@remcoint.com</a>
+                            <a href="mailto:remco@cats-net.co.tz" class="hover:text-primary transition-colors block py-1.5">remco@cats-net.co.tz</a>
+                            <a href="mailto:denny@remcoint.com" class="hover:text-primary transition-colors block py-1.5">denny@remcoint.com</a>
                         </span>
                     </li>
                 </ul>
@@ -481,25 +392,29 @@
         </div>
         <div
             class="max-w-7xl mx-auto pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-gray-400 text-xs uppercase tracking-widest font-bold">© 2026 REMCO (International) Ltd. All
+            <p class="text-gray-600 text-xs uppercase tracking-widest font-bold">© 2026 REMCO (International) Ltd. All
                 Rights Reserved.</p>
             <div class="flex gap-8">
-                <a class="text-gray-400 text-xs uppercase tracking-widest font-bold hover:text-navy" href="#">Privacy
+                <a class="text-gray-600 text-xs uppercase tracking-widest font-bold hover:text-navy py-1" href="#">Privacy
                     Policy</a>
-                <a class="text-gray-400 text-xs uppercase tracking-widest font-bold hover:text-navy" href="#">Terms of
+                <a class="text-gray-600 text-xs uppercase tracking-widest font-bold hover:text-navy py-1" href="#">Terms of
                     Service</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
+        // Initialize AOS safely after load without blocking render
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true,
+                    mirror: false
+                });
+            }
         });
 
         function toggleMenu() {

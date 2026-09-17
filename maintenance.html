@@ -22,30 +22,17 @@
     <!-- Performance & Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Compiled Production Tailwind CSS Bundle -->
+    <link rel="stylesheet" href="assets/style.min.css" />
 
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#397441",
-                        "navy": "#1F3A4A",
-                        "carrier-blue": "#004595",
-                        "toshiba-red": "#E4002B",
-                        "background-light": "#f8fafc",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    }
-                },
-            },
-        }
-    </script>
+    <!-- Google Fonts Non-blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" />
+    </noscript>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -90,7 +77,7 @@
 
             <!-- Company Logo -->
             <div class="mb-10 sm:mb-12 p-8 sm:p-10 bg-white rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100 flex items-center justify-center transition-transform duration-300 hover:scale-[1.02]">
-                <img src="assets/logo.png" alt="REMCO (International) Ltd" width="260" height="80" class="h-16 sm:h-20 w-auto object-contain" />
+                <img src="assets/logo.webp" alt="REMCO (International) Ltd" width="260" height="80" class="h-16 sm:h-20 w-auto object-contain" />
             </div>
 
             <!-- Coming Soon Title -->
@@ -110,7 +97,7 @@
     </main>
 
     <!-- Clean Footer -->
-    <footer class="relative z-10 w-full text-center text-xs text-gray-400 font-medium">
+    <footer class="relative z-10 w-full text-center text-xs text-gray-600 font-medium">
         <p>© 2026 REMCO (International) Ltd. Official Carrier &amp; Toshiba Dealer in Tanzania.</p>
     </footer>
 

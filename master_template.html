@@ -10,106 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://lh3.googleusercontent.com" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#397441", // Updated to match new logo
-                        "navy": "#1F3A4A",
-                        "carrier-blue": "#004595",
-                        "toshiba-red": "#E4002B",
-                        "background-light": "#f7f7f7",
-                        "background-dark": "#171b18",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+    <!-- Production Compiled Stylesheet (Zero render-blocking JS) -->
+    <link rel="stylesheet" href="assets/style.min.css" />
 
-        p {
-            text-align: justify;
-            text-justify: inter-word;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-        }
-
-        .text-center, .text-center p, p.text-center {
-            text-align: center !important;
-            hyphens: manual !important;
-            -webkit-hyphens: manual !important;
-        }
-
-        .text-left, .text-left p, p.text-left, .sub-heading {
-            text-align: left !important;
-            hyphens: manual !important;
-            -webkit-hyphens: manual !important;
-        }
-
-        .text-right, .text-right p, p.text-right {
-            text-align: right !important;
-            hyphens: manual !important;
-            -webkit-hyphens: manual !important;
-        }
-
-        @media (min-width: 768px) {
-            .md\:text-left, .md\:text-left p {
-                text-align: left !important;
-            }
-            .md\:text-center, .md\:text-center p {
-                text-align: center !important;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .lg\:text-left, .lg\:text-left p {
-                text-align: left !important;
-            }
-            .lg\:text-center, .lg\:text-center p {
-                text-align: center !important;
-            }
-        }
-
-        .animate-stagger-1 { animation-delay: 0.1s; }
-        .animate-stagger-2 { animation-delay: 0.2s; }
-        .animate-stagger-3 { animation-delay: 0.3s; }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .reveal-up {
-            opacity: 0;
-            animation: fadeInUp 0.8s forwards ease-out;
-        }
-    </style>
+    <!-- Non-render-blocking Web Fonts & Animations -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'" />
     <noscript>
-        <style>
-            body { opacity: 1 !important; }
-        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     </noscript>
 </head>
 <body class="bg-background-light text-navy font-display flex flex-col min-h-screen">
@@ -138,7 +50,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center">
                 <a href="index.html" class="flex items-center">
-                    <img src="assets/logo.png" alt="REMCO (International) Ltd - Premier Air Conditioning Solutions" width="168" height="56" class="h-12 md:h-14 w-auto object-contain" />
+                    <img src="assets/logo.webp" alt="REMCO (International) Ltd - Premier Air Conditioning Solutions" width="168" height="56" class="h-12 md:h-14 w-auto object-contain" />
                 </a>
             </div>
             <div class="hidden lg:flex items-center gap-8">
@@ -165,7 +77,7 @@
         <div class="absolute inset-0 bg-navy/60 backdrop-blur-sm" onclick="toggleMenu()"></div>
         <div class="absolute right-0 top-0 bottom-0 w-[300px] bg-white shadow-2xl flex flex-col p-8 transform translate-x-full transition-transform duration-300" id="mobileMenuContent">
             <div class="flex items-center justify-between mb-10">
-                <img src="assets/logo.png" alt="REMCO" class="h-10 w-auto" />
+                <img src="assets/logo.webp" alt="REMCO" class="h-10 w-auto" />
                 <button onclick="toggleMenu()" class="text-navy p-2 hover:bg-gray-100 rounded-lg transition-colors">
                     <span class="material-symbols-outlined text-3xl">close</span>
                 </button>
@@ -199,7 +111,7 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div>
                 <div class="flex items-center mb-8">
-                    <img src="assets/logo.png" alt="REMCO (International) Ltd - Premier Air Conditioning Solutions" width="180" height="56" class="h-12 md:h-16 w-auto object-contain" />
+                    <img src="assets/logo.webp" alt="REMCO (International) Ltd - Premier Air Conditioning Solutions" width="180" height="56" class="h-12 md:h-16 w-auto object-contain" />
                 </div>
                 <p class="text-gray-500 text-sm leading-relaxed mb-8">Authorized Carrier and Toshiba dealer in Tanzania with 28+ years of engineering excellence in premium HVAC systems.</p>
                 <div class="flex gap-4">
@@ -248,29 +160,33 @@
                     <li class="flex gap-4">
                         <span class="material-symbols-outlined text-primary">mail</span>
                         <span class="text-gray-500 text-sm">
-                            <a href="mailto:remco@cats-net.co.tz" class="hover:text-primary transition-colors block">remco@cats-net.co.tz</a>
-                            <a href="mailto:denny@remcoint.com" class="hover:text-primary transition-colors block">denny@remcoint.com</a>
+                            <a href="mailto:remco@cats-net.co.tz" class="hover:text-primary transition-colors block py-1.5">remco@cats-net.co.tz</a>
+                            <a href="mailto:denny@remcoint.com" class="hover:text-primary transition-colors block py-1.5">denny@remcoint.com</a>
                         </span>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="max-w-7xl mx-auto pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-gray-400 text-xs uppercase tracking-widest font-bold">© 2026 REMCO (International) Ltd. All Rights Reserved.</p>
+            <p class="text-gray-600 text-xs uppercase tracking-widest font-bold">© 2026 REMCO (International) Ltd. All Rights Reserved.</p>
             <div class="flex gap-8">
-                <a href="#" class="text-gray-400 text-xs uppercase tracking-widest font-bold hover:text-navy">Privacy Policy</a>
-                <a href="#" class="text-gray-400 text-xs uppercase tracking-widest font-bold hover:text-navy">Terms of Service</a>
+                <a href="#" class="text-gray-600 text-xs uppercase tracking-widest font-bold hover:text-navy py-1">Privacy Policy</a>
+                <a href="#" class="text-gray-600 text-xs uppercase tracking-widest font-bold hover:text-navy py-1">Terms of Service</a>
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
+        // Initialize AOS safely after load without blocking render
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true,
+                    mirror: false
+                });
+            }
         });
 
         function toggleMenu() {
