@@ -9,8 +9,8 @@
     <meta name="robots" content="noindex, nofollow" />
 
     <!-- Favicon / App Icons -->
-    <link rel="icon" type="image/png" href="assets/logo.png" />
-    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
 
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,18 +31,20 @@
 <body class="bg-background-light text-navy font-display flex flex-col min-h-screen">
 
     <!-- 1. Top Contact Strip -->
-    <div class="bg-navy text-white/90 py-2 px-6 lg:px-20 flex flex-wrap justify-between items-center text-xs font-medium border-b border-white/10">
-        <div class="flex gap-6">
-            <span class="flex items-center gap-2">
+    <div class="bg-navy text-white/90 py-2 px-4 sm:px-6 lg:px-20 flex justify-center sm:justify-between items-center text-xs font-medium border-b border-white/10">
+        <div class="flex items-center gap-6">
+            <a href="tel:+255222137773" class="flex items-center gap-2 hover:text-white transition-colors">
                 <span class="material-symbols-outlined text-sm">call</span>
-                +255 22 2137773 / 2133297
-            </span>
-            <span class="flex items-center gap-2">
+                <span class="tracking-wide">+255 22 2137773 / 2133297</span>
+            </a>
+            <span class="hidden md:flex items-center gap-2">
                 <span class="material-symbols-outlined text-sm">mail</span>
-                <a href="mailto:remco@cats-net.co.tz" class="hover:text-white transition-colors">remco@cats-net.co.tz</a> / <a href="mailto:denny@remcoint.com" class="hover:text-white transition-colors">denny@remcoint.com</a>
+                <a href="mailto:remco@cats-net.co.tz" class="hover:text-white transition-colors py-1 inline-block">remco@cats-net.co.tz</a>
+                <span class="text-white/40">/</span>
+                <a href="mailto:denny@remcoint.com" class="hover:text-white transition-colors py-1 inline-block">denny@remcoint.com</a>
             </span>
         </div>
-        <div class="hidden md:flex gap-4 items-center">
+        <div class="hidden md:flex gap-4 items-center text-white/70">
             <span>Official Carrier &amp; Toshiba Dealer</span>
             <div class="h-3 w-px bg-white/20"></div>
             <span>Dar es Salaam, Tanzania</span>
@@ -96,8 +98,21 @@
                 <a href="certifications.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">Certifications</a>
                 <a href="contact.html" class="text-navy text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">Contact</a>
             </div>
-            <div class="mt-auto pt-10 border-t border-gray-100">
-                <a href="contact.html" class="block text-center w-full bg-primary text-white py-4 rounded-xl font-black uppercase tracking-widest shadow-lg">
+            <div class="mt-auto pt-6 border-t border-gray-100 flex flex-col gap-3">
+                <div class="text-[11px] font-bold uppercase tracking-widest text-gray-400">Get in Touch</div>
+                <a href="tel:+255222137773" class="flex items-center gap-3 text-xs text-navy font-semibold hover:text-primary transition-colors py-1">
+                    <span class="material-symbols-outlined text-primary text-base">call</span>
+                    <span>+255 22 2137773 / 2133297</span>
+                </a>
+                <a href="mailto:remco@cats-net.co.tz" class="flex items-center gap-3 text-xs text-gray-600 hover:text-primary transition-colors py-1">
+                    <span class="material-symbols-outlined text-primary text-base">mail</span>
+                    <span>remco@cats-net.co.tz</span>
+                </a>
+                <a href="mailto:denny@remcoint.com" class="flex items-center gap-3 text-xs text-gray-600 hover:text-primary transition-colors py-1">
+                    <span class="material-symbols-outlined text-primary text-base">mail</span>
+                    <span>denny@remcoint.com</span>
+                </a>
+                <a href="contact.html" class="w-full bg-primary text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest shadow-md mt-2 text-xs hover:bg-primary/90 transition-all">
                     Get a Quote
                 </a>
             </div>
@@ -189,8 +204,18 @@
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-gray-600 text-xs uppercase tracking-widest font-bold">© 2026 REMCO (International) Ltd. All Rights Reserved.</p>
+        <div class="max-w-7xl mx-auto pt-10 border-t border-gray-100 flex flex-col items-center justify-center text-center gap-2">
+            <p class="text-gray-600 text-xs uppercase tracking-widest font-bold">
+                © 2026 REMCO (International) Ltd.
+            </p>
+            <p class="text-gray-500 text-xs uppercase tracking-wider font-semibold">
+                All Rights Reserved.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-2">
+                <a class="text-gray-500 text-xs uppercase tracking-wider font-semibold hover:text-primary transition-colors py-1 inline-block" href="#">Privacy Policy</a>
+                <span class="text-gray-300 text-xs hidden sm:inline">•</span>
+                <a class="text-gray-500 text-xs uppercase tracking-wider font-semibold hover:text-primary transition-colors py-1 inline-block" href="#">Terms &amp; Conditions</a>
+            </div>
         </div>
     </footer>
 
