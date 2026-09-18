@@ -46,8 +46,8 @@
         </image:image>
         <image:image>
             <image:loc>https://remcointernational.com/assets/project-2.jpeg</image:loc>
-            <image:title>PSSSF Commercial Complex HVAC</image:title>
-            <image:caption>Central cooling systems for PSSSF Commercial Complex</image:caption>
+            <image:title>PSSSF Commercial Complex (Dodoma) HVAC</image:title>
+            <image:caption>Central cooling systems for PSSSF Commercial Complex in Dodoma</image:caption>
         </image:image>
         <image:image>
             <image:loc>https://remcointernational.com/assets/project-3.jpg</image:loc>
@@ -73,6 +73,11 @@
             <image:loc>https://remcointernational.com/assets/project-7.jpeg</image:loc>
             <image:title>NMB Data Centre Precision Cooling</image:title>
             <image:caption>Mission-critical 24/7 cooling for NMB Bank Data Centre</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://remcointernational.com/assets/project-8.webp</image:loc>
+            <image:title>PSSSF Commercial Complex (Dar es Salaam) HVAC</image:title>
+            <image:caption>Comprehensive central HVAC installation for PSSSF Commercial Complex in Dar es Salaam</image:caption>
         </image:image>
     </url>
 
