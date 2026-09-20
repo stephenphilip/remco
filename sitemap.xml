@@ -22,7 +22,7 @@
 
     <!-- Solutions Page -->
     <url>
-        <loc>https://remcointernational.com/solutions.html</loc>
+        <loc>https://remcointernational.com/solutions</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -35,7 +35,7 @@
 
     <!-- Projects Page -->
     <url>
-        <loc>https://remcointernational.com/projects.html</loc>
+        <loc>https://remcointernational.com/projects</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -83,7 +83,7 @@
 
     <!-- About Page -->
     <url>
-        <loc>https://remcointernational.com/about.html</loc>
+        <loc>https://remcointernational.com/about</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -91,7 +91,7 @@
 
     <!-- Certifications Page -->
     <url>
-        <loc>https://remcointernational.com/certifications.html</loc>
+        <loc>https://remcointernational.com/certifications</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -99,7 +99,7 @@
 
     <!-- Contact Page -->
     <url>
-        <loc>https://remcointernational.com/contact.html</loc>
+        <loc>https://remcointernational.com/contact</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -107,7 +107,7 @@
 
     <!-- Dedicated SEO Landing Pages -->
     <url>
-        <loc>https://remcointernational.com/hvac-contractor-tanzania.html</loc>
+        <loc>https://remcointernational.com/hvac-contractor-tanzania</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -119,7 +119,7 @@
     </url>
 
     <url>
-        <loc>https://remcointernational.com/hvac-maintenance-tanzania.html</loc>
+        <loc>https://remcointernational.com/hvac-maintenance-tanzania</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -131,7 +131,7 @@
     </url>
 
     <url>
-        <loc>https://remcointernational.com/air-conditioning-tanzania.html</loc>
+        <loc>https://remcointernational.com/air-conditioning-tanzania</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -143,7 +143,7 @@
     </url>
 
     <url>
-        <loc>https://remcointernational.com/cooling-systems-tanzania.html</loc>
+        <loc>https://remcointernational.com/cooling-systems-tanzania</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -155,7 +155,7 @@
     </url>
 
     <url>
-        <loc>https://remcointernational.com/vrf-systems-tanzania.html</loc>
+        <loc>https://remcointernational.com/vrf-systems-tanzania</loc>
         <lastmod>2026-09-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
